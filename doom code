@@ -1,0 +1,135 @@
+Target Spawn:
+
+entity {
+	entityDef game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1a {
+	inherit = "target/spawn";
+	class = "idTarget_Spawn";
+	expandInheritance = false;
+	poolCount = 0;
+	poolGranularity = 2;
+	networkReplicated = false;
+	disableAIPooling = false;
+	edit = {
+		flags = {
+			noFlood = true;
+		}
+		spawnConditions = {
+			maxCount = 0;
+			reuseDelaySec = 0;
+			doBoundsTest = false;
+			boundsTestType = "BOUNDSTEST_NONE";
+			fovCheck = 0;
+			minDistance = 0;
+			maxDistance = 0;
+			neighborSpawnerDistance = -1;
+			LOS_Test = "LOS_NONE";
+			playerToTest = "PLAYER_SP";
+			conditionProxy = "";
+		}
+		spawnEditableShared = {
+			groupName = "";
+			deathTrigger = "";
+			coverRadius = 0;
+			maxEnemyCoverDistance = 0;
+		}
+		entityDefs = {
+			num = 0;
+		}
+		conductorEntityAIType = "SPAWN_AI_TYPE_ANY";
+		initialEntityDefs = {
+			num = 0;
+		}
+		spawnEditable = {
+			spawnAt = "";
+			copyTargets = false;
+			additionalTargets = {
+				num = 0;
+			}
+			overwriteTraversalFlags = true;
+			traversalClassFlags = "CLASS_A";
+			combatHintClass = "CLASS_ALL";
+			spawnAnim = "";
+			aiStateOverride = "AIOVERRIDE_TELEPORT";
+			initialTargetOverride = "";
+		}
+		portal = "";
+		targetSpawnParent = "";
+		disablePooling = false;
+		spawnPosition = {
+	x = 38.880001;
+	y = 22.170000;
+	z = -25.340000;
+}
+		spawnOrientation = {
+	mat = {
+		mat[0] = {
+			x = -0.037936;
+			y = -0.987500;
+			z = -0.152986;
+		}
+		mat[1] = {
+			x = 0.999263;
+			y = -0.038388;
+			z=0.000000;
+		}
+		mat[2] = {
+			x = -0.005873;
+			y = -0.152873;
+			z = 0.988228;
+		}
+	}
+}
+		targets = {
+			num = 0;
+		}
+	}
+}
+}
+
+Spawn Group
+
+entityDef SpawnGroup_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1a {
+	inherit = "encounter/spawn_group/zone";
+	class = "idTargetSpawnGroup";
+	expandInheritance = false;
+	poolCount = 0;
+	poolGranularity = 2;
+	networkReplicated = false;
+	disableAIPooling = false;
+	edit = {
+		spawnPosition = {
+			x = -45.5;
+			y = -53.5;
+			z = -24.3000011;
+		}
+		renderModelInfo = {
+			model = NULL;
+		}
+		clipModelInfo = {
+			clipModelName = "maps/game/sp/e2m1_nest/e2m1_nest/game_encounter_spawn_group_zone_2";
+		}
+		spawners = {
+			num = 15;
+			item[0] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1a";
+			item[1] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1b";
+			item[2] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1c";
+			item[3] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1d";
+			item[4] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1e";
+			item[5] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1f";
+			item[6] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1g";
+			item[7] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1h";
+			item[8] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1i";
+			item[9] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1j";
+			item[10] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1k";
+			item[11] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1l";
+			item[12] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1m";
+			item[13] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1n";
+			item[14] = "game_target_spawn_ENC3_1_ARCHVILE_2_DOOM_HUNTERS_12_REVENANTS_FODDER_IMPS_1o";
+			
+			
+		}
+		includeTouchingSpawners = false;
+		targetSpawnParent = "game_encounter_spawn_group_parent_1";
+	}
+}
+}
